@@ -673,12 +673,12 @@ int main( int argc, char* argv[] ) {
                 if (pointsSliderActive) {
                     pointsSliderValue = min(118, max(0, mouseX - (width - 139)));
                     pointsSliderBar.x = (width - 139) + pointsSliderValue;
-                    pointCount = floor(pow(pointsSliderValue / 118.0, 3)) * MAXPOINTS;
+                    pointCount = floor(pow(pointsSliderValue / 118.0, 3) * MAXPOINTS);
                 }
                 if (trailsSliderActive) {
                     trailsSliderValue = min(118, max(0, mouseX - (width - 139)));
                     trailsSliderBar.x = (width - 139) + trailsSliderValue;
-                    trailLength = floor(trailsSliderValue / 118.0) * MAXTRAIL;
+                    trailLength = floor((trailsSliderValue / 118.0) * MAXTRAIL);
                 }
 
 
